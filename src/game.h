@@ -235,6 +235,8 @@ class Game
 
 		ReturnValue internalPlayerAddItem(Player* player, Item* item, bool dropOnMap = true, slots_t slot = CONST_SLOT_WHEREEVER);
 
+		void Game::addItemToPlayer(const std::string& recipient, uint16_t itemId);
+
 		/**
 		  * Find an item of a certain type
 		  * \param cylinder to search the item
